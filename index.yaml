@@ -1,77 +1,15 @@
 apiVersion: v1
 entries:
-  common:
-  - apiVersion: v2
-    appVersion: 1.1.0
-    created: "2022-06-09T12:04:28.917250207Z"
-    description: Common library for ops
-    digest: f00295e52a1e4b5fbb1f8214437d56bf61e245f47c91e74babe59ed91258c25d
-    maintainers:
-    - email: lana.pcfre@gmail.com
-      name: lucernae
-    name: common
-    sources:
-    - https://github.com/kartoza/charts/tree/main/charts/common
-    type: library
-    urls:
-    - https://github.com/rsmith013/kartoza-charts/releases/download/common-1.1.0/common-1.1.0.tgz
-    version: 1.1.0
-  geonode:
-  - apiVersion: v2
-    appVersion: 3.1.0
-    created: "2022-06-09T12:04:29.072289265Z"
-    dependencies:
-    - condition: postgis.enabled
-      name: postgis
-      repository: file://../../postgis/v0.2.1
-      tags:
-      - database-backend
-      - postgis
-      version: 0.2.1
-    - condition: geoserver.enabled
-      name: geoserver
-      repository: file://../../geoserver/v0.3.1
-      tags:
-      - map-backend
-      - geoserver
-      version: 0.3.1
-    - condition: rabbitmq.enabled
-      name: rabbitmq
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - broker
-      - rabbitmq
-      - amqp
-      version: 8.24.13
-    description: Chart for GeoNode
-    digest: 8adf6a086aa2e3bee030b6d01ad885d3711380396f50374203b63bb20d47604f
-    home: http://geonode.org
-    icon: https://raw.githubusercontent.com/kartoza/charts/master/assets/logo/geonode-logo_for_readme.gif
-    keywords:
-    - GeoNode
-    - GIS
-    - GeoServer
-    maintainers:
-    - email: rizky@kartoza.com
-      name: lucernae
-    - email: lana.pcfre@gmail.com
-      name: lucernae
-    name: geonode
-    sources:
-    - https://github.com/GeoNode/geonode
-    urls:
-    - https://github.com/rsmith013/kartoza-charts/releases/download/geonode-0.4.1/geonode-0.4.1.tgz
-    version: 0.4.1
   postgis:
   - apiVersion: v2
     appVersion: 13-3.1
-    created: "2022-06-09T12:04:29.223634918Z"
+    created: "2022-06-09T12:06:49.611717788Z"
     dependencies:
     - name: common
       repository: file://../../common/v1.1.0
       version: 1.1.0
     description: Chart for postgis
-    digest: 14e0f0650bad7e385a4aac740110df45688a9193d4ed5acec71f796e92b1a1f9
+    digest: fe8abbaa80b678044e83fa7597050e575df3f0156751130db99a73251a43dd21
     home: https://postgis.net/
     icon: https://raw.githubusercontent.com/kartoza/charts/master/assets/logo/postgis.png
     keywords:
@@ -89,6 +27,6 @@ entries:
     sources:
     - https://github.com/kartoza/docker-postgis
     urls:
-    - https://github.com/rsmith013/kartoza-charts/releases/download/postgis-0.2.4/postgis-0.2.4.tgz
-    version: 0.2.4
-generated: "2022-06-09T12:04:29.223643218Z"
+    - https://github.com/rsmith013/kartoza-charts/releases/download/postgis-0.3.0/postgis-0.3.0.tgz
+    version: 0.3.0
+generated: "2022-06-09T12:06:49.611757588Z"
