@@ -7,11 +7,11 @@ Kartoza Helm/Rancher charts for Kubernetes
 To add the Helm Repo using Helm CLI:
 
 ```bash
-helm repo add kartoza https://kartoza.github.io/charts
+helm repo add rsmith-kartoza https://rsmith013.github.io/kartoza-charts
 ```
 
 To add the Helm Repo in Rancher (Because we are using Rancher format structure),
-use the github url: https://github.com/kartoza/charts.git.
+use the github url: https://github.com/rsmith013/kartoza-charts.git.
 Stable version of the charts is in `main` branch.
 
 
@@ -20,7 +20,7 @@ Stable version of the charts is in `main` branch.
 To install chart, execute helm command
 
 ```bash
-helm install -n <namespace> <release-name> kartoza/<chart-name> --version <chart-version> -f <values.yaml>
+helm install -n <namespace> <release-name> rsmith-kartoza/<chart-name> --version <chart-version> -f <values.yaml>
 ```
 
 # Development
